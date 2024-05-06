@@ -4,8 +4,22 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>NoctaTCG | {% block title %}{% endblock %}</title>
+    <script src="https://cdn.tailwindcss.com"></script>
 </head>
 <body>
+    <nav class="w-full bg-[#9a105b] px-5 py-2.5 flex place-content-between items-center">
+        <ul class="flex gap-10">
+            <a href="#"><li class="uppercase font-bold text-white">Decks</li></a>
+            <a href="#"><li class="uppercase font-bold text-white">Noticias</li></a>
+            <a href="#"><li class="uppercase font-bold text-white">Card database</li></a>
+            <a href="#"><li class="uppercase font-bold text-white">Discord</li></a>
+            <a href="#"><li class="uppercase font-bold text-white">Erratas</li></a>
+            <a href="#"><li class="uppercase font-bold text-white">¿Donde jugar?</li></a>
+        </ul>
+        <div>
+            <input type="text" placeholder="Buscar" class="bg-[#9b9b9a] text-white placeholder:text-white p-2 rounded-md">
+        </div>
+    </nav>
     {% block content %}{% endblock %}
 </body>
 </html>
