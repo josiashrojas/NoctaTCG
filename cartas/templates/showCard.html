@@ -1,0 +1,74 @@
+{% extends "base.html" %}
+{% block title %}Inicio{% endblock %}
+{% block content%}
+<div class="w-10/12 py-10 mx-auto">
+    <h1 class="uppercase text-[#9a105b] font-bold text-2xl">Card database</h1>
+    <section class="py-10 flex gap-10">
+        <img src="#" alt="#" class="h-[400px] w-[400px] bg-black rounded-xl">
+        <div class="w-fit">
+            <!-- -.5rem de margen para que quede alineado con la imagen -->
+            <h2 class="pb-5 text-2xl mt-[-.5rem]">Yammu Cientifíca (v1)</h2>
+            <div class="w-2/3 grid grid-cols-3 gap-x-3 gap-y-1">
+                <div class="bg-[#f5279f] text-white rounded-md px-2">
+                    <h3 class="uppercase font-bold text-xs">id</h3>
+                    <p>PR-01</p>
+                </div>
+                <div class="bg-[#f5279f] text-white rounded-md px-2">
+                    <h3 class="uppercase font-bold text-xs">arquetipo</h3>
+                    <p>Guardia Real</p>
+                </div>
+                <div class="bg-[#f5279f] text-white rounded-md px-2">
+                    <h3 class="uppercase font-bold text-xs">skin</h3>
+                    <p>Si</p>
+                </div>
+                <div class="border-2 border-solid border-[#f5279f] rounded-md px-2">
+                    <h3 class="uppercase font-bold text-xs">vida</h3>
+                    <p>10</p>
+                </div>
+                <div class="border-2 border-solid border-[#f5279f] rounded-md px-2">
+                    <h3 class="uppercase font-bold text-xs">daño</h3>
+                    <p>3</p>
+                </div>
+                <div class="border-2 border-solid border-[#f5279f] rounded-md px-2">
+                    <h3 class="uppercase font-bold text-xs">aura</h3>
+                    <p>2</p>
+                </div>
+            </div>
+            <h3 class="font-bold pt-2">Descripción</h3>
+            <p class="w-2/3">Lorem ipsum, dolor sit amet consectetur adipisicing elit. Consequuntur repellendus totam nemo reprehenderit voluptatibus dolore sit aspernatur facilis. Illo voluptates neque pariatur minus voluptate nostrum sint distinctio consectetur aliquam perferendis.</p>
+            <div class="leading-5 border-l-8 border-[#f5279f] pl-3 my-5">
+                <p class="italic">Primera Edición</p>
+                <p class="italic">Aparece en: PACTO DE PODER</p>
+                <p class="italic">Ilustrador: Kenron Toqueen</p>
+                <p class="italic">Precio Referencial: $1.500</p>
+            </div>
+        </div>
+    </section>
+    <hr class="border-[#f5279f] border-8 rounded-full">
+    <section>
+        <h2 class="text-[#9a105b] font-bold text-center text-3xl mt-10 mb-5">Similares a "Yammu Cientifíca (v1)"</h2>
+        <div class="grid grid-cols-6 gap-5 mb-10">
+            <img src="#" alt="#" class="aspect-[2/3] bg-black rounded-xl">
+            <img src="#" alt="#" class="aspect-[2/3] bg-black rounded-xl">
+            <img src="#" alt="#" class="aspect-[2/3] bg-black rounded-xl">
+            <img src="#" alt="#" class="aspect-[2/3] bg-black rounded-xl">
+            <img src="#" alt="#" class="aspect-[2/3] bg-black rounded-xl">
+            <img src="#" alt="#" class="aspect-[2/3] bg-black rounded-xl">
+        </div>
+        <div class="flex justify-center">
+            <a href="#" class="bg-[#f5279f] text-white px-10 py-2 rounded-md">Ver todas</a>
+        </div>
+    </section>
+    <section>
+        <h2 class="text-[#9a105b] font-bold text-center text-3xl mt-10 mb-5">Mazos con "Yammu Cientifíca (v1)"</h2>
+        <div class="grid grid-cols-2 gap-5 mb-10">
+            {% include "mazoResumen.html" with categoria="comunidad" precio="$45.000" nombre="Tomatita Idol (ISSUE)" subtitulo="Idol, abierto a sugerencias" creador="JuanitoAlimaña1 - hace 2 horas" vistas="25"%}
+            {% include "mazoResumen.html" with categoria="comunidad" precio="$23.100" nombre="IGUABAL - Pulpos" subtitulo="Mazo reducido" creador="PotoHueco19 - hace 10 horas" vistas="115"%}
+        </div>
+        <div class="flex justify-center">
+            <a href="#" class="bg-[#f5279f] text-white px-10 py-2 rounded-md">Ver todos</a>
+        </div>
+    </section>
+</div>
+
+{% endblock %}

@@ -1,0 +1,16 @@
+<div class="bg-black relative h-[300px]">
+    <div class="uppercase text-[#f5279f] text-xs font-bold bg-white rounded-xl object-contain w-fit px-2 py-0.5 mx-2 mt-2">{{ categoria }}</div> 
+    <div class="uppercase bg-[#f5279f] text-white text-xs font-bold rounded-xl object-contain w-fit px-2 py-0.5 mx-2 mt-1">{{ precio }}</div> 
+
+    <div class="bg-[#f5279f] w-full h-1/2 absolute bottom-0 text-white p-2 flex flex-col place-content-between">
+        <div>
+            <h3 class="font-bold text-xl">{{ nombre }}</h3>
+            <p>{{ subtitulo }}</p>
+        </div>
+        <div class="flex items-center gap-1 ">
+            <div class="aspect-square w-[24px] rounded-full bg-white"></div>
+            <p class="text-xs">{{ creador }}</p>
+            <p class="text-sm font-bold pl-4">{{ vistas }}</p>
+        </div>
+    </div>
+</div>

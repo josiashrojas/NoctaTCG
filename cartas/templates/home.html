@@ -21,23 +21,23 @@
     <div class="grid grid-cols-5 gap-5 py-4 text-center">
         <div>
             <img src="#" alt="#" class="bg-black rounded-xl h-[120px]">
-            <a href="#" class="uppercase text-[#9a105b] text-lg font-bold">Deck builder</a>
+            <a href="#" class="capitalize text-lg font-bold">Deck builder</a>
         </div>
         <div>
             <img src="#" alt="#" class="bg-black rounded-xl h-[120px]">
-            <a href="#" class="uppercase text-[#9a105b] text-lg font-bold">Card database</a>
+            <a href="#" class="capitalize text-lg font-bold">Card database</a>
         </div>
         <div>
             <img src="#" alt="#" class="bg-black rounded-xl h-[120px]">
-            <a href="#" class="uppercase text-[#9a105b] text-lg font-bold">Ingresar deck codes</a>
+            <a href="#" class="capitalize text-lg font-bold">Ingresar deck codes</a>
         </div>
         <div>
             <img src="#" alt="#" class="bg-black rounded-xl h-[120px]">
-            <a href="#" class="uppercase text-[#9a105b] text-lg font-bold">Releases</a>
+            <a href="#" class="capitalize text-lg font-bold">Releases</a>
         </div>
         <div>
             <img src="#" alt="#" class="bg-black rounded-xl h-[120px]">
-            <a href="#" class="uppercase text-[#9a105b] text-lg font-bold">expansiones</a>
+            <a href="#" class="capitalize text-lg font-bold">expansiones</a>
         </div>
     </div>
 </section>
@@ -147,38 +147,8 @@
     <h2 class="uppercase text-[#9a105b] text-3xl font-bold">DECKS DESTACADOS</h2> 
     <div class="grid grid-cols-2 gap-5 py-4">
         <!-- TODO: Add image background -->
-        <div class="bg-black relative h-[300px]">
-            <div class="uppercase text-[#f5279f] text-xs font-bold bg-white rounded-xl object-contain w-fit px-2 py-0.5 mx-2 mt-2">comunidad</div> 
-            <div class="uppercase bg-[#f5279f] text-white text-xs font-bold rounded-xl object-contain w-fit px-2 py-0.5 mx-2 mt-1">$45.000</div> 
-
-            <div class="bg-[#f5279f] w-full h-1/2 absolute bottom-0 text-white p-2 flex flex-col place-content-between">
-                <div>
-                    <h3 class="font-bold text-xl">Tomatita Idol (ISSUE)</h3>
-                    <p>Idol, abierto a sugerencias</p>
-                </div>
-                <div class="flex items-center gap-1 ">
-                    <div class="aspect-square w-[24px] rounded-full bg-white"></div>
-                    <p class="text-xs">JuanitoAlimaña1 - hace 2 horas</p>
-                    <p class="text-sm font-bold pl-4">25</p>
-                </div>
-            </div>
-        </div>
-        <div class="bg-black relative">
-            <div class="uppercase text-[#f5279f] text-xs font-bold bg-white rounded-xl object-contain w-fit px-2 py-0.5 mx-2 mt-2">comunidad</div> 
-            <div class="uppercase bg-[#f5279f] text-white text-xs font-bold rounded-xl object-contain w-fit px-2 py-0.5 mx-2 mt-1">$45.000</div> 
-
-            <div class="bg-[#f5279f] w-full h-1/2 absolute bottom-0 text-white p-2 flex flex-col place-content-between">
-                <div>
-                    <h3 class="font-bold text-xl">IGUABAL - Pulpos</h3>
-                    <p>Mazo reducido</p>
-                </div>
-                <div class="flex items-center gap-1 ">
-                    <div class="aspect-square w-[24px] rounded-full bg-white"></div>
-                    <p class="text-xs">PotoHueco19 - hace 10 horas</p>
-                    <p class="text-sm font-bold pl-4">115</p>
-                </div>
-            </div>
-        </div>
+        {% include "mazoResumen.html" with categoria="comunidad" precio="$45.000" nombre="Tomatita Idol (ISSUE)" subtitulo="Idol, abierto a sugerencias" creador="JuanitoAlimaña1 - hace 2 horas" vistas="25"%}
+        {% include "mazoResumen.html" with categoria="comunidad" precio="$23.100" nombre="IGUABAL - Pulpos" subtitulo="Mazo reducido" creador="PotoHueco19 - hace 10 horas" vistas="115"%}
     </div>
 </section>
 {% endblock %}
