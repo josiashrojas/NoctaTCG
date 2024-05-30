@@ -8,4 +8,5 @@ urlpatterns = [
     path("deck", views.showDeck, name="deck"),
     path("expansiones", views.expansiones, name="expansiones"),
     path("expansion", views.showExpantion, name="showExpantion"),
+    path("deckBuilder", views.deckBuilder, name="deckbuilder"),
 ]

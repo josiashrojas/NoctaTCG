@@ -18,3 +18,6 @@ def expansiones(request):
 
 def showExpantion(request):
     return render(request, "showExpantion.html")
+
+def deckBuilder(request):
+    return render(request, "deckBuilder.html")
